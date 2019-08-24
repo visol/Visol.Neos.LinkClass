@@ -1,6 +1,6 @@
 # Visol.Neos.LinkClass
 
-Extends the Neos CKE5 linkeditor with additional class attribute
+Extends the Neos CKE5 link editor with an additional class selector.
 
 ![image](https://user-images.githubusercontent.com/837032/63639108-904ffa80-c698-11e9-83ff-78c458549dc1.png)
 
@@ -8,7 +8,7 @@ Extends the Neos CKE5 linkeditor with additional class attribute
 
 1. Install the package with composer
 
-2. Enable additional linking options with such config:
+2. Enable additional linking options with the following configuration:
 
 ```
 "Neos.NodeTypes.BaseMixins:TextMixin":
@@ -21,7 +21,7 @@ Extends the Neos CKE5 linkeditor with additional class attribute
               linkClass: true
 ```
 
-3. Configure link classes in Settings.yaml with such config:
+3. Configure link classes in Settings.yaml with the following configuration:
 
 ```
 Neos:
@@ -44,4 +44,11 @@ cd Resources/Private/LinkClass
 yarn && yarn build
 ```
 
-And then commit changed files including Plugin.js
+And then commit changed files, including Plugin.js.
+
+## Credits
+
+Created for visol by Dmitri Pisarev, https://github.com/dimaip
+
+visol digitale Dienstleistungen GmbH, www.visol.ch
+
