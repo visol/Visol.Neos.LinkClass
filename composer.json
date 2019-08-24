@@ -1,0 +1,15 @@
+{
+    "description": "Extends the Neos CKE5 linkeditor with custom class attribute",
+    "type": "neos-package",
+    "name": "visol/link-class",
+    "license": "MIT",
+    "require": {
+        "neos/neos": "*",
+        "neos/neos-ui": "^3.8 || ^2.8"
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Visol.Neos.LinkClass"
+        }
+    }
+}

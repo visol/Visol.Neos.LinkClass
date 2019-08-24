@@ -1,0 +1,13 @@
+Neos:
+  Neos:
+    Ui:
+      resources:
+        javascript:
+          "Visol.Neos.LinkClass":
+            resource: '${"resource://Visol.Neos.LinkClass/Public/JavaScript/LinkClass/Plugin.js"}'
+      frontendConfiguration:
+        "Visol.Neos.LinkClass":
+          linkClasses:
+            # Define link classes
+            # standard: "Plain Link"
+            # button: "Button"
