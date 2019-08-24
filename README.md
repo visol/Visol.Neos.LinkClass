@@ -35,6 +35,20 @@ Neos:
 
 ```
 
+If the default style ("Plain Link" in the example above) should have no specific class, you can use an empty key in the configuration:
+
+```
+Neos:
+  Neos:
+    Ui:
+      frontendConfiguration:
+        "Visol.Neos.LinkClass":
+          linkClasses:
+            '': "Plain Link"
+            button: "Button"
+
+```
+
 ## Development
 
 If you need to adjust anything in this package, just do so and then rebuild the code like this:
