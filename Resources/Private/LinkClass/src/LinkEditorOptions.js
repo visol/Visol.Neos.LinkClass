@@ -10,6 +10,7 @@ import { executeCommand } from "@neos-project/neos-ui-ckeditor5-bindings";
 import { selectors } from "@neos-project/neos-ui-redux-store";
 
 @neos(globalRegistry => ({
+  i18nRegistry: globalRegistry.get("i18n"),
   options: globalRegistry
     .get("frontendConfiguration")
     .get("Visol.Neos.LinkClass")
@@ -38,7 +39,7 @@ export default class LinkEditorOptions extends PureComponent {
     return $get("linkClass", this.props.linkingOptions) && selectBoxOptions ? (
       <div style={{ flexGrow: 1 }}>
         <div style={{ padding: 8 }}>
-          Link Class
+          {this.props.i18nRegistry.translate("Visol.Neos.LinkClass:Main:label")}
           <SelectBox
             options={selectBoxOptions}
             optionValueField="value"
@@ -46,7 +47,9 @@ export default class LinkEditorOptions extends PureComponent {
             onValueChange={value => {
               executeCommand("linkClass", value, false);
             }}
-            placeholder="Choose link class"
+            placeholder={this.props.i18nRegistry.translate(
+              "Visol.Neos.LinkClass:Main:placeholder"
+            )}
             allowEmpty={true}
           />
         </div>

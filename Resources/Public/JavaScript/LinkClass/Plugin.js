@@ -705,6 +705,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var LinkEditorOptions = (_dec = (0, _neosUiDecorators.neos)(function (globalRegistry) {
   return {
+    i18nRegistry: globalRegistry.get("i18n"),
     options: globalRegistry.get("frontendConfiguration").get("Visol.Neos.LinkClass")
   };
 }), _dec2 = (0, _reactRedux.connect)((0, _plowJs.$transform)({
@@ -738,7 +739,7 @@ var LinkEditorOptions = (_dec = (0, _neosUiDecorators.neos)(function (globalRegi
         _react2.default.createElement(
           "div",
           { style: { padding: 8 } },
-          "Link Class",
+          this.props.i18nRegistry.translate("Visol.Neos.LinkClass:Main:label"),
           _react2.default.createElement(_reactUiComponents.SelectBox, {
             options: selectBoxOptions,
             optionValueField: "value",
@@ -746,7 +747,7 @@ var LinkEditorOptions = (_dec = (0, _neosUiDecorators.neos)(function (globalRegi
             onValueChange: function onValueChange(value) {
               (0, _neosUiCkeditor5Bindings.executeCommand)("linkClass", value, false);
             },
-            placeholder: "Choose link class",
+            placeholder: this.props.i18nRegistry.translate("Visol.Neos.LinkClass:Main:placeholder"),
             allowEmpty: true
           })
         )
