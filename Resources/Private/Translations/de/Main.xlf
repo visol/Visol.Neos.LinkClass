@@ -3,10 +3,10 @@
     <file original="" source-language="en" datatype="plaintext">
         <body>
             <trans-unit id="label">
-              <target>Link-Klasse</target>
+              <target>Link-Stil</target>
             </trans-unit>
             <trans-unit id="placeholder">
-                <target>Wählen Sie den Link-Klasse</target>
+                <target>Link-Stil wählen...</target>
             </trans-unit>
         </body>
     </file>

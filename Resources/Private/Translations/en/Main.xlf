@@ -3,10 +3,10 @@
     <file original="" source-language="en" datatype="plaintext">
         <body>
             <trans-unit id="label">
-              <source>Link Class</source>
+              <source>Link style</source>
             </trans-unit>
             <trans-unit id="placeholder">
-                <source>Choose link class</source>
+                <source>Choose link style...</source>
             </trans-unit>
         </body>
     </file>
