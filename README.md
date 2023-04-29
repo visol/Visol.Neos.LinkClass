@@ -4,6 +4,15 @@ Extends the Neos CKE5 link editor with an additional class selector.
 
 ![image](https://user-images.githubusercontent.com/837032/63639108-904ffa80-c698-11e9-83ff-78c458549dc1.png)
 
+## Compatibility and Maintenance
+
+This package is currently being maintained for the following versions:
+
+| Neos Version        | Version | Maintained |
+|----------------------------|----------------------------------|------------|
+| Neos 4.x-7.2         | 1.x | No |
+| Neos 7.3 and above | 2.x  | Yes    |
+
 ## Installation
 
 1. Install the package with composer
@@ -21,7 +30,7 @@ Extends the Neos CKE5 link editor with an additional class selector.
               linkClass: true
 ```
 
-3. Configure link classes in Settings.yaml with the following configuration:
+3. Configure link classes in `Settings.yaml` with the following configuration:
 
 ```
 Neos:
@@ -65,4 +74,3 @@ And then commit changed files, including Plugin.js.
 Created for visol by Dmitri Pisarev, https://github.com/dimaip
 
 visol digitale Dienstleistungen GmbH, www.visol.ch
-
